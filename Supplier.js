@@ -1,0 +1,3 @@
+
+db.createCollection( 'Supplier', {validator: {$jsonSchema: {bsonType: 'object',description:' supplier of each of the glasses',title:'Supplier',required: [         'SupplierGlasses'],properties: {Name: {bsonType: 'string'},Address: {bsonType: 'object',
+title:'object',properties: {Street: {bsonType: 'string'},Number: {bsonType: 'string'},Floor: {bsonType: 'string'},Door: {bsonType: 'string'},City: {bsonType: 'string'},Postal Code: {bsonType: 'string'},Country: {bsonType: 'string'}}},Telephone: {bsonType: 'string'},Fax: {bsonType: 'string'},NIF: {bsonType: 'string'},SupplierGlasses: {bsonType: 'objectId'}}         }      }});  
